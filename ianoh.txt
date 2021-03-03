@@ -1,0 +1,64 @@
+#DICTIONARIES
+
+student = {
+"FName" : "Glen",
+"LName" : "Arua",
+"Phone" : 720302034,
+"Email" : "glenarua@gmail.com"
+}
+
+print(student)
+
+car = {
+"brand" : "Ford Mustang",
+"electric" : False,
+"year" : 2015,
+"color" : ["red", "white", "blue",]
+}
+print(car)
+
+#FINDING KEYS AND VARIABLES IN A DICTIONARY
+
+car = {
+"brand" : "Ford Mustang",
+"model" : "Mustang",
+"year" : 1964,
+}
+x = car["model"]
+print(x)
+y = car.values()
+print(y)
+
+
+car = {
+"brand" : "Dexter",
+"model" : "Mustang",
+"year" : 1964,
+}
+x = car["model"]
+print(x)
+y = car.values()
+print(y)
+b = car.get("brand")
+print(b)
+
+#UPDATING VALUES IN A DICTIONARY
+
+car = {
+"brand" : "D-MAX",
+"model" : "Isuzu",
+"year" : 2020,
+}
+car["year"] = 2018
+car["brand"] = "Q7"
+car["Model"] = "Audi"
+car["Color"] = "indigo"
+print(car)
+
+#lOOP IN DICTIONARIES
+people = {1: {'name': 'John', 'age': '27', 'sex': 'Male'},
+          2: {'name': 'Marie', 'age': '22', 'sex': 'Female'},
+          3: {'name': 'Luna', 'age': '24', 'sex': 'Female', 'married': 'No'}}
+
+people[4] = {'name': 'Peter', 'age': '29', 'sex': 'Male', 'married': 'Yes'}
+print(people[4])
